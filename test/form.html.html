@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Student Registration Form</div>
+    <form>
+      <table>
+        <tr>
+          <td class="label">Name</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td class="label">Father Name</td>
+          <td><input type="text" name="father"></td>
+        </tr>
+        <tr>
+          <td class="label">Personal Address</td>
+          <td><textarea name="address"></textarea></td>
+        </tr>
+        <tr>
+          <td class="label">Gender</td>
+          <td class="opts">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">City</td>
+          <td>
+            <select><option>select</option></select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Course</td>
+          <td>
+            <select><option>select</option></select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Skill Set</td>
+          <td class="opts">
+            <label><input type="checkbox"> C</label>
+            <label><input type="checkbox"> C++</label>
+            <label><input type="checkbox"> Java</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">PinCode</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td class="label">EmailId</td>
+          <td><input type="email"></td>
+        </tr>
+        <tr>
+          <td class="label">DOB</td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td class="label">MobileNo</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td class="buttons"></td>
+          <td class="buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
