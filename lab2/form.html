@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Student Registration Form</div>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <table>
+        <tr>
+          <td class="label">Name</td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td class="label">Father Name</td>
+          <td><input type="text" id="father"></td>
+        </tr>
+        <tr>
+          <td class="label">Personal Address</td>
+          <td><textarea id="address"></textarea></td>
+        </tr>
+        <tr>
+          <td class="label">Gender</td>
+          <td class="opts">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">City</td>
+          <td>
+            <select id="city">
+              <option value="">Select</option>
+              <option value="Addis Ababa">Addis Ababa</option>
+              <option value="Adama">Adama</option>
+              <option value="Bahir Dar">Bahir Dar</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Course</td>
+          <td>
+            <select id="course">
+              <option value="">Select</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Business">Business</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Skill Set</td>
+          <td class="opts">
+            <label><input type="checkbox" name="skill" value="C"> C</label>
+            <label><input type="checkbox" name="skill" value="C++"> C++</label>
+            <label><input type="checkbox" name="skill" value="Java"> Java</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">PinCode</td>
+          <td><input type="text" id="pincode"></td>
+        </tr>
+        <tr>
+          <td class="label">EmailId</td>
+          <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+          <td class="label">DOB</td>
+          <td><input type="date" id="dob"></td>
+        </tr>
+        <tr>
+          <td class="label">MobileNo</td>
+          <td><input type="text" id="mobile"></td>
+        </tr>
+        <tr>
+          <td class="buttons"></td>
+          <td class="buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
