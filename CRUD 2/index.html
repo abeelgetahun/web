@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD</title>
+    <style>
+        body{font-family:sans-serif}
+        table{width:100%;border-collapse:collapse}
+        th,td{border:1px solid #ddd;padding:8px}
+        form{margin:20px 0}
+        input{margin:5px 0;padding:5px;width:200px}
+        button{padding:5px 10px;margin-right:5px}
+    </style>
+</head>
+<body>
+    <h1>User Management</h1>
+    
+    <form id="userForm">
+        <input type="hidden" id="userId">
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="text" id="phone" placeholder="Phone" required><br>
+        <button type="submit">Save</button>
+        <button type="button" onclick="resetForm()">Cancel</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
