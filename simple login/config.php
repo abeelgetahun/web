@@ -1,12 +1,11 @@
 <?php
-$host = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "simple_auth";
+$host='localhost';
+$dbusername='root';
+$passowrd='';
+$dbname='user_auth';
+$conn=mysqli_connect($host,$dbusername,$passowrd,$dbname);
 
-$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn){    
+    die('erro occur on db connection'.mysqli_connect_error());
 }
 ?>
