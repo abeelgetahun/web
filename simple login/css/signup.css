@@ -1,0 +1,21 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+
+}
+form{
+    text-align: center;
+}
+
+#registerBtn{
+    background-color:aqua;
+    color:white;
+}
+
+#registerBtn:hover{
+    color:red;
+    background-color: bisque;
+}
